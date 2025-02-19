@@ -55,9 +55,11 @@ ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    justify-content: space-between;
 }
 
 .button {
+    flex: 1 1 calc(33.333% - 10px); /* 3 buttons per row with a gap of 10px */
     display: inline-block;
     padding: 10px 20px;
     background-color: #007bff;
@@ -66,6 +68,7 @@ ul li a:hover {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
+    box-sizing: border-box;
 }
 
 .button:hover {
