@@ -10,18 +10,27 @@ body {
 header {
     background-color: #000;
     color: #fff;
-    padding: 20px 0; /* Increase padding to make header thicker */
+    padding: 0; /* Remove padding to make header thicker */
     text-align: center;
+    position: relative;
+    height: 300px; /* Set a fixed height for the header */
+    overflow: hidden;
 }
 
 .header-image {
     width: 100%;
-    height: auto;
-    max-height: 200px; /* Set a maximum height for the header image */
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the header area without distortion */
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 header h1 {
-    margin: 10px 0 0 0; /* Adjust margin to provide space for the image */
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    padding: 20px 0;
 }
 
 main {
@@ -75,6 +84,11 @@ ul li a:hover {
     border-radius: 5px;
     transition: background-color 0.3s;
     box-sizing: border-box;
+}
+
+.center-button {
+    flex: 0 1 33.333%; /* Center button with fixed width */
+    margin: 0 auto; /* Center the button */
 }
 
 .button:hover {
@@ -132,7 +146,7 @@ ul li a:hover {
 
 .evoker {
     background-color: #33937F;
-    flex: 0 1 33.333%; /* Center button with fixed width */
+flex: 0 1 33.333%; /* Center button with fixed width */
     margin: 0 auto; /* Center the button */
 }
 
