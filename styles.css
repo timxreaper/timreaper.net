@@ -15,6 +15,9 @@ header {
     position: relative;
     height: 250px; /* Set a fixed height for the header */
     overflow: hidden;
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
 }
 
 .header-image {
@@ -146,7 +149,7 @@ ul li a:hover {
 
 .evoker {
     background-color: #33937F;
-flex: 0 1 33.333%; /* Center button with fixed width */
+    flex: 0 1 33.333%; /* Center button with fixed width */
     margin: 0 auto; /* Center the button */
 }
 
