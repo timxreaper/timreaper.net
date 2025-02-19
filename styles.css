@@ -63,7 +63,7 @@ ul li a:hover {
     flex: 1 1 calc(33.333% - 10px); /* 3 buttons per row with a gap of 10px */
     display: inline-block;
     padding: 10px 20px;
-    color: #fff;
+    color: #000;
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
@@ -126,6 +126,8 @@ ul li a:hover {
 
 .evoker {
     background-color: #33937F;
+    flex: 0 1 33.333%; /* Center button with fixed width */
+    margin: 0 auto; /* Center the button */
 }
 
 footer {
