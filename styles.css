@@ -16,8 +16,11 @@ header {
     height: 250px; /* Set a fixed height for the header */
     overflow: hidden;
     display: flex;
-    align-items: flex-end; /* Vertically align the content to the bottom */
-    justify-content: center; /* Horizontally center the content */
+
+
+    align-items: center; /* Vertically center the content */
+    justify-content: flex-start; /* Horizontally align the content to the left */
+    padding-left: 20px; /* Add padding to the left for spacing */
 }
 
 .header-image {
