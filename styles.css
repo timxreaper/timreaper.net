@@ -10,12 +10,18 @@ body {
 header {
     background-color: #000;
     color: #fff;
-    padding: 10px 0;
+    padding: 20px 0; /* Increase padding to make header thicker */
     text-align: center;
 }
 
+.header-image {
+    width: 100%;
+    height: auto;
+    max-height: 200px; /* Set a maximum height for the header image */
+}
+
 header h1 {
-    margin: 0;
+    margin: 10px 0 0 0; /* Adjust margin to provide space for the image */
 }
 
 main {
@@ -126,8 +132,6 @@ ul li a:hover {
 
 .evoker {
     background-color: #33937F;
-    flex: 0 1 33.333%; /* Center button with fixed width */
-    margin: 0 auto; /* Center the button */
 }
 
 footer {
