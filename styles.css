@@ -87,10 +87,11 @@ ul li a:hover {
     color: #000;
     text-align: center;
     text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    border-radius: 10px; /* Add border radius */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; /* Add transition effects */
     box-sizing: border-box;
-    font-family: 'Goudy Old Style', serif; /* Set font to Goudy Old Style */
+    font-family: 'Oswald', sans-serif; /* Set font to Oswald */
 }
 
 .center-button {
@@ -99,7 +100,15 @@ ul li a:hover {
 }
 
 .button:hover {
-    opacity: 0.8;
+    background-color: #ddd; /* Change background color on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Increase box shadow on hover */
+    transform: translateY(-2px); /* Slightly lift the button on hover */
+}
+
+.button:active {
+    background-color: #ccc; /* Change background color on active */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Decrease box shadow on active */
+    transform: translateY(0); /* Reset the lift effect on active */
 }
 
 /* Specific button colors */
