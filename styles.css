@@ -3,8 +3,21 @@ body {
     font-family: Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000; /* Set background color to black */
+    background-color: #000; /* Initial background color */
     color: #fff; /* Set text color to white */
+    animation: backgroundFade 10s infinite alternate; /* Apply the animation */
+}
+
+@keyframes backgroundFade {
+    0% {
+        background-color: #000; /* Start color */
+    }
+    50% {
+        background-color: #333; /* Mid color */
+    }
+    100% {
+        background-color: #666; /* End color */
+    }
 }
 
 header {
@@ -16,8 +29,6 @@ header {
     height: 250px; /* Set a fixed height for the header */
     overflow: hidden;
     display: flex;
-
-
     align-items: center; /* Vertically center the content */
     justify-content: flex-start; /* Horizontally align the content to the left */
     padding-left: 20px; /* Add padding to the left for spacing */
