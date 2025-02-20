@@ -21,6 +21,7 @@ body {
     padding: 0;
     background: linear-gradient(135deg, #000, #262626, #4C4C4C); /* Gradient background */
     color: #fff; /* Set text color to white */
+    margin-bottom: 0; /* Remove bottom margin */
 }
 
 header {
@@ -57,6 +58,7 @@ header h1 {
 
 main {
     padding: 20px;
+    margin-bottom: 0; /* Remove bottom margin */
 }
 
 section {
@@ -263,8 +265,6 @@ footer {
     .button {
         flex: 1 1 auto; /* Allow buttons to take full width */
     }
-
-
 }
 
 @media (max-width: 480px) {
