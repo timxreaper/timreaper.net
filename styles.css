@@ -22,9 +22,12 @@ html, body {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     font-family: Helvetica, sans-serif;
     background: linear-gradient(135deg, #000, #262626, #4C4C4C); /* Gradient background */
     color: #fff; /* Set text color to white */
+    min-height: 100vh; /* Ensure body takes up full height of viewport */
 }
 
 header {
@@ -60,9 +63,9 @@ header h1 {
 }
 
 main {
+    flex-grow: 1; /* Allow main to grow and fill the remaining space */
     padding: 20px;
     margin-bottom: 0; /* Remove bottom margin */
-    min-height: calc(100vh - 250px); /* Ensure main takes up full height minus header */
 }
 
 section {
