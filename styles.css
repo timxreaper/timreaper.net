@@ -282,6 +282,6 @@ footer {
     }
 
     section {
-        margin-bottom: 10px; /* Reduce section margin */
+        margin-bottom: 0px; /* Reduce section margin */
     }
 }
