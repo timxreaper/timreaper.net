@@ -1,4 +1,20 @@
 /* General styles */
+:root {
+    --rogue-color: #FFF468;
+    --warlock-color: #8788EE;
+    --death-knight-color: #C41E3A;
+    --shaman-color: #0070DD;
+    --paladin-color: #F48CBA;
+    --warrior-color: #C69B6D;
+    --priest-color: #FFFFFF;
+    --demon-hunter-color: #A330C9;
+    --monk-color: #00FF98;
+    --mage-color: #3FC7EB;
+    --druid-color: #FF7C0A;
+    --hunter-color: #AAD372;
+    --evoker-color: #33937F;
+}
+
 body {
     font-family: Helvetica, sans-serif;
     margin: 0;
@@ -94,11 +110,6 @@ ul li a:hover {
     font-family: 'Oswald', sans-serif; /* Set font to Oswald */
 }
 
-.center-button {
-    flex: 0 1 33.333%; /* Center button with fixed width */
-    margin: 0 auto; /* Center the button */
-}
-
 .button:hover {
     background-color: #ddd; /* Change background color on hover */
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Increase box shadow on hover */
@@ -111,59 +122,116 @@ ul li a:hover {
     transform: translateY(0); /* Reset the lift effect on active */
 }
 
+.center-button {
+    flex: 0 1 33.333%; /* Center button with fixed width */
+    margin: 0 auto; /* Center the button */
+}
+
 /* Specific button colors */
 .rogue {
-    background-color: #FFF468;
+    background-color: var(--rogue-color);
+}
+
+.rogue:hover, .rogue:active {
+    background-color: var(--rogue-color);
 }
 
 .warlock {
-    background-color: #8788EE;
+    background-color: var(--warlock-color);
+}
+
+.warlock:hover, .warlock:active {
+    background-color: var(--warlock-color);
 }
 
 .death-knight {
-    background-color: #C41E3A;
+    background-color: var(--death-knight-color);
+}
+
+.death-knight:hover, .death-knight:active {
+    background-color: var(--death-knight-color);
 }
 
 .shaman {
-    background-color: #0070DD;
+    background-color: var(--shaman-color);
+}
+
+.shaman:hover, .shaman:active {
+    background-color: var(--shaman-color);
 }
 
 .paladin {
-    background-color: #F48CBA;
+    background-color: var(--paladin-color);
+}
+
+.paladin:hover, .paladin:active {
+    background-color: var(--paladin-color);
 }
 
 .warrior {
-    background-color: #C69B6D;
+    background-color: var(--warrior-color);
+}
+
+.warrior:hover, .warrior:active {
+    background-color: var(--warrior-color);
 }
 
 .priest {
-    background-color: #FFFFFF;
+    background-color: var(--priest-color);
+}
+
+.priest:hover, .priest:active {
+    background-color: var(--priest-color);
 }
 
 .demon-hunter {
-    background-color: #A330C9;
+    background-color: var(--demon-hunter-color);
+}
+
+.demon-hunter:hover, .demon-hunter:active {
+    background-color: var(--demon-hunter-color);
 }
 
 .monk {
-    background-color: #00FF98;
+    background-color: var(--monk-color);
+}
+
+.monk:hover, .monk:active {
+    background-color: var(--monk-color);
 }
 
 .mage {
-    background-color: #3FC7EB;
+    background-color: var(--mage-color);
+}
+
+.mage:hover, .mage:active {
+    background-color: var(--mage-color);
 }
 
 .druid {
-    background-color: #FF7C0A;
+    background-color: var(--druid-color);
+}
+
+.druid:hover, .druid:active {
+    background-color: var(--druid-color);
 }
 
 .hunter {
-    background-color: #AAD372;
+    background-color: var(--hunter-color);
+}
+
+.hunter:hover, .hunter:active {
+    background-color: var(--hunter-color);
 }
 
 .evoker {
-    background-color: #33937F;
+    background-color: var(--evoker-color);
     flex: 0 1 33.333%; /* Center button with fixed width */
     margin: 0 auto; /* Center the button */
+}
+
+.evoker:hover, .evoker:active {
+    background-color: var(--evoker-color);
 }
 
 footer {
