@@ -15,6 +15,12 @@
     --evoker-color: #33937F;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 body {
     font-family: Helvetica, sans-serif;
     margin: 0;
@@ -59,6 +65,7 @@ header h1 {
 main {
     padding: 20px;
     margin-bottom: 0; /* Remove bottom margin */
+    min-height: calc(100vh - 250px); /* Ensure main takes up full height minus header */
 }
 
 section {
